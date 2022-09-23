@@ -1,0 +1,10 @@
+/.vscode
+/CMakeFiles
+/IE
+
+*.cmake
+*.ini
+*.a
+
+test
+myApp
