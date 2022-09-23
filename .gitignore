@@ -1,6 +1,7 @@
 /.vscode
 /CMakeFiles
 /IE
+/include/sdl
 
 *.cmake
 *.ini
