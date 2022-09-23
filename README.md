@@ -1,1 +1,1 @@
-#BSCpp Wrapper for SDL2 ImGui
+# BSCpp Wrapper for SDL2 ImGui
