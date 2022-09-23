@@ -1,9 +1,10 @@
 /.vscode
-/CMakeFiles
-/IE
-/include/sdl
+/CMakeFiles/*
+/IE/*
 /lib/SDL2
-
+/include/glad/*
+/include/KHR/*
+/lib/*
 *.cmake
 *.ini
 *.a
