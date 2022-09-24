@@ -34,8 +34,7 @@ class Scaffold: public Widget
 
         virtual ~Scaffold()
         {
-            if(appBar) delete appBar;
-            if(body) delete body;
+ 
         }
 
         void setup(SDL_Window * _window)

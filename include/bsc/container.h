@@ -20,11 +20,12 @@ class Container: public Widget
         Container(std::string _id, Widget * _child)
         {
             id = &_id;
+            child = _child;
         }
 
         virtual ~Container()
         {
-            if(child) delete child;
+            
         }
 
         void setup(SDL_Window * _window)

@@ -26,10 +26,7 @@ MainApp::MainApp(std::string title, Widget * home)
  * Destructor
 */
 MainApp::~MainApp(){
-    if(scaffold)
-    {
-        delete scaffold;
-    }
+
 };
 
 void MainApp::run()
@@ -159,6 +156,8 @@ void MainApp::run()
             SDL_Log("Start Loop");
         #endif
 
+        this->setup(window);
+        
         while (loop)
         {
             this->mainLoop();
@@ -250,8 +249,7 @@ void MainApp::mainLoop()
         // start the Dear ImGui frame
         ImGui_ImplOpenGL3_NewFrame();
         ImGui_ImplSDL2_NewFrame(window);
-        
-        this->setup(window);
+                
         this->render();
 
         ImGui::Render();

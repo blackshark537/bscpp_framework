@@ -3,9 +3,13 @@
 #include "bsc/scaffold.h"
 #include "bsc/container.h"
 #include "bsc/column.h"
+#include "bsc/row.h"
 #include "bsc/text.h"
-
 #include<vector>
+
+#include "./custom_widget.h"
+
+int count = 0;
 
 int main()
 {
@@ -70,21 +74,54 @@ int main()
         }
     };
 
+    StatefullWidget * myWgt = new StatefullWidget();
+    myWgt->build(
+        new Button(
+            "KLK BTB: " + std::to_string(count),
+            [](){
+                count++;   
+                std::cout<<count<<std::endl;
+                
+            }
+        )
+    );
+    
+
+    std::vector<Widget*> rows{
+        new Text("This is a column 1"),
+        new Text("This is a row 1"),
+        new Text("This is a row 2"),
+        myWgt
+    };
+
+    std::vector<Widget*> cols{
+        new Row(rows),
+        new Text("This is a column 2"),
+        new Text("This is a column 3"),
+        new Button(
+            "KLK BTN",
+            [](){
+                
+            }
+        )
+    };
+
     MainApp * app = new MainApp(
         "My App Title", 
         new Scaffold(
             new NavBar(
-                "Brand",
+                "Apple",
                 &menu
             ),
             new Container(
-                "first",
-                new Text("Hello My Friends")
+                "cont-1",
+                new Column(
+                    cols
+                )
             )
         )
     );
     app->run();
 
-    delete app;
     return 0;
 }

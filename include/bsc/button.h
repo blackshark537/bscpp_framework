@@ -14,17 +14,21 @@
 // BSC
 #include "widget.h"
 
-class Text: public Widget
+class Button: public Widget
 {
     std::string * label;
-
+    void (*callback)(void) = nullptr;
     public:
-    Text(std::string _label)
+    Button(
+        std::string _label,
+        void (*_callback)(void)
+    )
     {
         label = &_label;
+        callback = _callback;
     }
 
-    ~Text()
+    ~Button()
     {}
 
     void setup(SDL_Window * _window)
@@ -32,6 +36,9 @@ class Text: public Widget
 
     void render()
     {
-        ImGui::Text("%s", label->c_str());
+        if(ImGui::Button(label->c_str()))
+        {
+            this->callback();
+        }
     }
 };

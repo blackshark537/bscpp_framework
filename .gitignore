@@ -9,6 +9,8 @@
 *.ini
 *.a
 
+makefile
+
 test
 myApp
 SDL2

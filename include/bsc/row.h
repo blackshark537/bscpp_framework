@@ -13,19 +13,19 @@
 // BSC
 #include "widget.h"
 
-class Column : public Widget
+class Row : public Widget
 {
 private:
     std::vector<Widget *> childs;
 
 public:
-    Column(
+    Row(
         std::vector<Widget *> _childs)
     {
         childs = _childs;
     }
 
-    ~Column()
+    ~Row()
     {
 
     }
@@ -42,11 +42,9 @@ public:
     {
         if (childs.size() > 0)
         {
-            ImGui::Columns(childs.size(), NULL);
             for (Widget *child : childs)
             {
                 child->render();
-                ImGui::NextColumn();
             }
         }
     }

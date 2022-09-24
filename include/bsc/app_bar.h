@@ -60,8 +60,7 @@ class NavBar: public Widget
 
         ~NavBar()
         {
-            if (brand) delete brand;
-            if (menu) delete menu;
+    
         }
 
         void setup(SDL_Window * _window)
