@@ -3,6 +3,7 @@
 #include "bsc/scaffold.h"
 #include "bsc/container.h"
 #include "bsc/column.h"
+#include "bsc/text.h"
 
 #include<vector>
 
@@ -78,7 +79,7 @@ int main()
             ),
             new Container(
                 "first",
-                nullptr
+                new Text("Hello My Friends")
             )
         )
     );

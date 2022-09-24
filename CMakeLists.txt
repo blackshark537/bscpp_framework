@@ -82,6 +82,7 @@ set(sources
     include/bsc/app_bar.h
     include/bsc/container.h
     include/bsc/column.h
+    include/bsc/text.h
 )
 
 if (WIN32)
