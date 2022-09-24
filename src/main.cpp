@@ -77,33 +77,38 @@ int main()
     StatefullWidget * myWgt = new StatefullWidget();
     myWgt->build(
         new Button(
-            "KLK BTB: " + std::to_string(count),
+            "Inc Count: " + std::to_string(count),
             [](){
                 count++;   
                 std::cout<<count<<std::endl;
-                
             }
         )
     );
     
 
-    std::vector<Widget*> rows{
+    std::vector<Widget*> row1{
         new Text("This is a column 1"),
         new Text("This is a row 1"),
         new Text("This is a row 2"),
         myWgt
     };
 
-    std::vector<Widget*> cols{
-        new Row(rows),
-        new Text("This is a column 2"),
-        new Text("This is a column 3"),
+    std::vector<Widget*> row2{
+        new Text("This is a column 4"),
         new Button(
-            "KLK BTN",
+            "Dec Count: " + std::to_string(count),
             [](){
-                
+                count--;
+                std::cout<<count<<std::endl;
             }
         )
+    };
+
+    std::vector<Widget*> cols{
+        new Row(row1),
+        new Text("This is a column 2"),
+        new Text("This is a column 3"),
+        new Row(row2)
     };
 
     MainApp * app = new MainApp(
