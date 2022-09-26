@@ -62,7 +62,8 @@ include_directories(
 set(sources
     include/bsc/bscpp.h
     include/bsc/main.cpp
-
+    include/bsc/IconsFontAwesome5.h
+    
     src/app.cpp
     
     imgui/imconfig.h
@@ -110,6 +111,14 @@ else()
             )
     endif()
 endif()
+
+# copy icon file to the build directory
+add_custom_command(
+    TARGET ${CMAKE_PROJECT_NAME} POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy
+            ${CMAKE_SOURCE_DIR}/icons/*.ttf
+            ${CMAKE_CURRENT_BINARY_DIR}/icons/*.ttf
+            )
 
 # copy font file to the build directory
 add_custom_command(

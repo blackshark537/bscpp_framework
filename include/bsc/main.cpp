@@ -160,9 +160,9 @@ int main(int argc, char *argv[])
         ImGui::CreateContext();
 
         // Load Fonts
-        ImGuiIO &io = ImGui::GetIO();
+        /* ImGuiIO &io = ImGui::GetIO();
         (void)io;
-        io.Fonts->AddFontFromFileTTF("./fonts/verdana.ttf", 18.0f, NULL, NULL);
+        io.Fonts->AddFontFromFileTTF("./fonts/verdana.ttf", 18.0f, NULL, NULL); */
 
         // Set Style
         // ImGui::StyleColorsClassic();
