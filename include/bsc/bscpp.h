@@ -37,6 +37,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 namespace BSCpp
 {
     class App
+        
     {   
         public:
             App(){};

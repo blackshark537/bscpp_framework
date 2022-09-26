@@ -182,7 +182,7 @@ int main(int argc, char *argv[])
                 SDL_Log("Start Loop");
         #endif
         // Instantiating BSCpp_App
-        App *app = new App();
+        std::unique_ptr app = std::make_unique<App>();
         if(!app) {
             throw "Couldn't create an instance of BSC_APP\n";
         }
