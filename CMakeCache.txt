@@ -146,7 +146,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=myAPP
+CMAKE_PROJECT_NAME:STATIC=app
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=1.0
@@ -236,6 +236,15 @@ OPENGL_glu_LIBRARY:FILEPATH=/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.
 
 //Path to a library.
 SDL:FILEPATH=/Library/Frameworks/SDL2.framework
+
+//Value Computed by CMake
+app_BINARY_DIR:STATIC=/Users/macbookpro/development/cpp_projects/bscpp_framework
+
+//Value Computed by CMake
+app_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+app_SOURCE_DIR:STATIC=/Users/macbookpro/development/cpp_projects/bscpp_framework
 
 //Value Computed by CMake
 myAPP_BINARY_DIR:STATIC=/Users/macbookpro/development/cpp_projects/bscpp_framework

@@ -130,24 +130,24 @@ glad/fast:
 .PHONY : glad/fast
 
 #=============================================================================
-# Target rules for targets named myAPP
+# Target rules for targets named app
 
 # Build rule for target.
-myAPP: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myAPP
-.PHONY : myAPP
+app: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app
+.PHONY : app
 
 # fast build rule for target.
-myAPP/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/build
-.PHONY : myAPP/fast
+app/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
+.PHONY : app/fast
 
 imgui/imgui.o: imgui/imgui.cpp.o
 .PHONY : imgui/imgui.o
 
 # target to build an object file
 imgui/imgui.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/imgui/imgui.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/imgui/imgui.cpp.o
 .PHONY : imgui/imgui.cpp.o
 
 imgui/imgui.i: imgui/imgui.cpp.i
@@ -155,7 +155,7 @@ imgui/imgui.i: imgui/imgui.cpp.i
 
 # target to preprocess a source file
 imgui/imgui.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/imgui/imgui.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/imgui/imgui.cpp.i
 .PHONY : imgui/imgui.cpp.i
 
 imgui/imgui.s: imgui/imgui.cpp.s
@@ -163,7 +163,7 @@ imgui/imgui.s: imgui/imgui.cpp.s
 
 # target to generate assembly for a file
 imgui/imgui.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/imgui/imgui.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/imgui/imgui.cpp.s
 .PHONY : imgui/imgui.cpp.s
 
 imgui/imgui_demo.o: imgui/imgui_demo.cpp.o
@@ -171,7 +171,7 @@ imgui/imgui_demo.o: imgui/imgui_demo.cpp.o
 
 # target to build an object file
 imgui/imgui_demo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/imgui/imgui_demo.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/imgui/imgui_demo.cpp.o
 .PHONY : imgui/imgui_demo.cpp.o
 
 imgui/imgui_demo.i: imgui/imgui_demo.cpp.i
@@ -179,7 +179,7 @@ imgui/imgui_demo.i: imgui/imgui_demo.cpp.i
 
 # target to preprocess a source file
 imgui/imgui_demo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/imgui/imgui_demo.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/imgui/imgui_demo.cpp.i
 .PHONY : imgui/imgui_demo.cpp.i
 
 imgui/imgui_demo.s: imgui/imgui_demo.cpp.s
@@ -187,7 +187,7 @@ imgui/imgui_demo.s: imgui/imgui_demo.cpp.s
 
 # target to generate assembly for a file
 imgui/imgui_demo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/imgui/imgui_demo.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/imgui/imgui_demo.cpp.s
 .PHONY : imgui/imgui_demo.cpp.s
 
 imgui/imgui_draw.o: imgui/imgui_draw.cpp.o
@@ -195,7 +195,7 @@ imgui/imgui_draw.o: imgui/imgui_draw.cpp.o
 
 # target to build an object file
 imgui/imgui_draw.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/imgui/imgui_draw.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/imgui/imgui_draw.cpp.o
 .PHONY : imgui/imgui_draw.cpp.o
 
 imgui/imgui_draw.i: imgui/imgui_draw.cpp.i
@@ -203,7 +203,7 @@ imgui/imgui_draw.i: imgui/imgui_draw.cpp.i
 
 # target to preprocess a source file
 imgui/imgui_draw.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/imgui/imgui_draw.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/imgui/imgui_draw.cpp.i
 .PHONY : imgui/imgui_draw.cpp.i
 
 imgui/imgui_draw.s: imgui/imgui_draw.cpp.s
@@ -211,7 +211,7 @@ imgui/imgui_draw.s: imgui/imgui_draw.cpp.s
 
 # target to generate assembly for a file
 imgui/imgui_draw.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/imgui/imgui_draw.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/imgui/imgui_draw.cpp.s
 .PHONY : imgui/imgui_draw.cpp.s
 
 imgui/imgui_impl_opengl3.o: imgui/imgui_impl_opengl3.cpp.o
@@ -219,7 +219,7 @@ imgui/imgui_impl_opengl3.o: imgui/imgui_impl_opengl3.cpp.o
 
 # target to build an object file
 imgui/imgui_impl_opengl3.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/imgui/imgui_impl_opengl3.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/imgui/imgui_impl_opengl3.cpp.o
 .PHONY : imgui/imgui_impl_opengl3.cpp.o
 
 imgui/imgui_impl_opengl3.i: imgui/imgui_impl_opengl3.cpp.i
@@ -227,7 +227,7 @@ imgui/imgui_impl_opengl3.i: imgui/imgui_impl_opengl3.cpp.i
 
 # target to preprocess a source file
 imgui/imgui_impl_opengl3.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/imgui/imgui_impl_opengl3.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/imgui/imgui_impl_opengl3.cpp.i
 .PHONY : imgui/imgui_impl_opengl3.cpp.i
 
 imgui/imgui_impl_opengl3.s: imgui/imgui_impl_opengl3.cpp.s
@@ -235,7 +235,7 @@ imgui/imgui_impl_opengl3.s: imgui/imgui_impl_opengl3.cpp.s
 
 # target to generate assembly for a file
 imgui/imgui_impl_opengl3.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/imgui/imgui_impl_opengl3.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/imgui/imgui_impl_opengl3.cpp.s
 .PHONY : imgui/imgui_impl_opengl3.cpp.s
 
 imgui/imgui_impl_sdl.o: imgui/imgui_impl_sdl.cpp.o
@@ -243,7 +243,7 @@ imgui/imgui_impl_sdl.o: imgui/imgui_impl_sdl.cpp.o
 
 # target to build an object file
 imgui/imgui_impl_sdl.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/imgui/imgui_impl_sdl.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/imgui/imgui_impl_sdl.cpp.o
 .PHONY : imgui/imgui_impl_sdl.cpp.o
 
 imgui/imgui_impl_sdl.i: imgui/imgui_impl_sdl.cpp.i
@@ -251,7 +251,7 @@ imgui/imgui_impl_sdl.i: imgui/imgui_impl_sdl.cpp.i
 
 # target to preprocess a source file
 imgui/imgui_impl_sdl.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/imgui/imgui_impl_sdl.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/imgui/imgui_impl_sdl.cpp.i
 .PHONY : imgui/imgui_impl_sdl.cpp.i
 
 imgui/imgui_impl_sdl.s: imgui/imgui_impl_sdl.cpp.s
@@ -259,7 +259,7 @@ imgui/imgui_impl_sdl.s: imgui/imgui_impl_sdl.cpp.s
 
 # target to generate assembly for a file
 imgui/imgui_impl_sdl.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/imgui/imgui_impl_sdl.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/imgui/imgui_impl_sdl.cpp.s
 .PHONY : imgui/imgui_impl_sdl.cpp.s
 
 imgui/imgui_widgets.o: imgui/imgui_widgets.cpp.o
@@ -267,7 +267,7 @@ imgui/imgui_widgets.o: imgui/imgui_widgets.cpp.o
 
 # target to build an object file
 imgui/imgui_widgets.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/imgui/imgui_widgets.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/imgui/imgui_widgets.cpp.o
 .PHONY : imgui/imgui_widgets.cpp.o
 
 imgui/imgui_widgets.i: imgui/imgui_widgets.cpp.i
@@ -275,7 +275,7 @@ imgui/imgui_widgets.i: imgui/imgui_widgets.cpp.i
 
 # target to preprocess a source file
 imgui/imgui_widgets.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/imgui/imgui_widgets.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/imgui/imgui_widgets.cpp.i
 .PHONY : imgui/imgui_widgets.cpp.i
 
 imgui/imgui_widgets.s: imgui/imgui_widgets.cpp.s
@@ -283,7 +283,7 @@ imgui/imgui_widgets.s: imgui/imgui_widgets.cpp.s
 
 # target to generate assembly for a file
 imgui/imgui_widgets.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/imgui/imgui_widgets.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/imgui/imgui_widgets.cpp.s
 .PHONY : imgui/imgui_widgets.cpp.s
 
 include/bsc/main.o: include/bsc/main.cpp.o
@@ -291,7 +291,7 @@ include/bsc/main.o: include/bsc/main.cpp.o
 
 # target to build an object file
 include/bsc/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/include/bsc/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/include/bsc/main.cpp.o
 .PHONY : include/bsc/main.cpp.o
 
 include/bsc/main.i: include/bsc/main.cpp.i
@@ -299,7 +299,7 @@ include/bsc/main.i: include/bsc/main.cpp.i
 
 # target to preprocess a source file
 include/bsc/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/include/bsc/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/include/bsc/main.cpp.i
 .PHONY : include/bsc/main.cpp.i
 
 include/bsc/main.s: include/bsc/main.cpp.s
@@ -307,7 +307,7 @@ include/bsc/main.s: include/bsc/main.cpp.s
 
 # target to generate assembly for a file
 include/bsc/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/include/bsc/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/include/bsc/main.cpp.s
 .PHONY : include/bsc/main.cpp.s
 
 include/glad/glad.o: include/glad/glad.c.o
@@ -339,7 +339,7 @@ src/app.o: src/app.cpp.o
 
 # target to build an object file
 src/app.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/src/app.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/app.cpp.o
 .PHONY : src/app.cpp.o
 
 src/app.i: src/app.cpp.i
@@ -347,7 +347,7 @@ src/app.i: src/app.cpp.i
 
 # target to preprocess a source file
 src/app.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/src/app.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/app.cpp.i
 .PHONY : src/app.cpp.i
 
 src/app.s: src/app.cpp.s
@@ -355,7 +355,7 @@ src/app.s: src/app.cpp.s
 
 # target to generate assembly for a file
 src/app.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/src/app.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/app.cpp.s
 .PHONY : src/app.cpp.s
 
 # Help Target
@@ -366,8 +366,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... app"
 	@echo "... glad"
-	@echo "... myAPP"
 	@echo "... imgui/imgui.o"
 	@echo "... imgui/imgui.i"
 	@echo "... imgui/imgui.s"

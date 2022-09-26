@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 
 # set the project name
-project(myAPP VERSION 1.0)
+project(app VERSION 1.0)
 
 # for filesystem functionality from C++17  - this is a variable
 set(CMAKE_CXX_STANDARD 17)
