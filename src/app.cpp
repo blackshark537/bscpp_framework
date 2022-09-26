@@ -10,10 +10,10 @@ int count = 0;
 
 void App::setup()
 {
+    //Setting Icons
     ImGuiIO& io = ImGui::GetIO();
     io.Fonts->AddFontDefault();
     
-    // merge in icons from Font Awesome
     static const ImWchar icons_ranges[] = { ICON_MIN_FA, ICON_MAX_16_FA, 0 };
     ImFontConfig icons_config; 
     icons_config.MergeMode = true; 

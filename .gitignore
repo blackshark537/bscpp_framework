@@ -13,4 +13,5 @@ makefile
 
 test
 myApp
+app
 SDL2
