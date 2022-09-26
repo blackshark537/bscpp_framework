@@ -9,7 +9,8 @@
 *.ini
 *.a
 
-makefile
+Makefile
+CMakeCache.txt
 
 test
 myApp
