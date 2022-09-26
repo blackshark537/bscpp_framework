@@ -20,7 +20,10 @@ class Scaffold: public Widget
     Widget * body = nullptr;
     
     //Variables for allocate the size of the main window
-    int sdl_width = 0, sdl_height = 0;
+    #ifndef WINDOW_SIZE
+        int sdl_width = 0;
+        int sdl_height = 0;
+    #define WINDOW_SIZE
 
     public:
         Scaffold(

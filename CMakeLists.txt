@@ -60,8 +60,10 @@ include_directories(
 
 # your sources variable
 set(sources
-    src/main.cpp
-    src/custom_widget.h
+    include/bsc/bscpp.h
+    include/bsc/main.cpp
+
+    src/app.cpp
     
     imgui/imconfig.h
     imgui/imgui.cpp
@@ -77,17 +79,7 @@ set(sources
     imgui/imgui_impl_opengl3.h
     imgui/imgui_impl_sdl.cpp
     imgui/imgui_impl_sdl.h
-    include/bsc/widget.h
-    include/bsc/statefull_widget.h
-    include/bsc/main_app.h
-    include/bsc/main_app.cpp
-    include/bsc/scaffold.h
-    include/bsc/app_bar.h
-    include/bsc/container.h
-    include/bsc/column.h
-    include/bsc/row.h
-    include/bsc/text.h
-    include/bsc/button.h
+
 )
 
 if (WIN32)

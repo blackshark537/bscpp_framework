@@ -13,7 +13,7 @@ class StatefullWidget: public Widget
 
         void setState()
         {
-            
+
         }
 
         void render(){

@@ -13,16 +13,24 @@
 // BSC
 #include "widget.h"
 
+typedef struct {
+    int column = 0;
+    float size = 100.0f;
+} StyleColumn;
+
 class Column : public Widget
 {
 private:
     std::vector<Widget *> childs;
-
+    StyleColumn * style = nullptr;
 public:
     Column(
-        std::vector<Widget *> _childs)
+        std::vector<Widget *> _childs,
+        StyleColumn * _style = nullptr
+    )
     {
         childs = _childs;
+        style = _style;
     }
 
     ~Column()
@@ -43,6 +51,9 @@ public:
         if (childs.size() > 0)
         {
             ImGui::Columns(childs.size(), NULL);
+            if(style){
+                ImGui::SetColumnWidth(style->column-1, style->size);
+            }
             for (Widget *child : childs)
             {
                 child->render();

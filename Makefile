@@ -286,29 +286,29 @@ imgui/imgui_widgets.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/imgui/imgui_widgets.cpp.s
 .PHONY : imgui/imgui_widgets.cpp.s
 
-include/bsc/main_app.o: include/bsc/main_app.cpp.o
-.PHONY : include/bsc/main_app.o
+include/bsc/main.o: include/bsc/main.cpp.o
+.PHONY : include/bsc/main.o
 
 # target to build an object file
-include/bsc/main_app.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/include/bsc/main_app.cpp.o
-.PHONY : include/bsc/main_app.cpp.o
+include/bsc/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/include/bsc/main.cpp.o
+.PHONY : include/bsc/main.cpp.o
 
-include/bsc/main_app.i: include/bsc/main_app.cpp.i
-.PHONY : include/bsc/main_app.i
+include/bsc/main.i: include/bsc/main.cpp.i
+.PHONY : include/bsc/main.i
 
 # target to preprocess a source file
-include/bsc/main_app.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/include/bsc/main_app.cpp.i
-.PHONY : include/bsc/main_app.cpp.i
+include/bsc/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/include/bsc/main.cpp.i
+.PHONY : include/bsc/main.cpp.i
 
-include/bsc/main_app.s: include/bsc/main_app.cpp.s
-.PHONY : include/bsc/main_app.s
+include/bsc/main.s: include/bsc/main.cpp.s
+.PHONY : include/bsc/main.s
 
 # target to generate assembly for a file
-include/bsc/main_app.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/include/bsc/main_app.cpp.s
-.PHONY : include/bsc/main_app.cpp.s
+include/bsc/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/include/bsc/main.cpp.s
+.PHONY : include/bsc/main.cpp.s
 
 include/glad/glad.o: include/glad/glad.c.o
 .PHONY : include/glad/glad.o
@@ -334,29 +334,29 @@ include/glad/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/include/glad/glad.c.s
 .PHONY : include/glad/glad.c.s
 
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+src/app.o: src/app.cpp.o
+.PHONY : src/app.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/app.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/src/app.cpp.o
+.PHONY : src/app.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+src/app.i: src/app.cpp.i
+.PHONY : src/app.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/app.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/src/app.cpp.i
+.PHONY : src/app.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+src/app.s: src/app.cpp.s
+.PHONY : src/app.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/app.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAPP.dir/build.make CMakeFiles/myAPP.dir/src/app.cpp.s
+.PHONY : src/app.cpp.s
 
 # Help Target
 help:
@@ -386,15 +386,15 @@ help:
 	@echo "... imgui/imgui_widgets.o"
 	@echo "... imgui/imgui_widgets.i"
 	@echo "... imgui/imgui_widgets.s"
-	@echo "... include/bsc/main_app.o"
-	@echo "... include/bsc/main_app.i"
-	@echo "... include/bsc/main_app.s"
+	@echo "... include/bsc/main.o"
+	@echo "... include/bsc/main.i"
+	@echo "... include/bsc/main.s"
 	@echo "... include/glad/glad.o"
 	@echo "... include/glad/glad.i"
 	@echo "... include/glad/glad.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... src/app.o"
+	@echo "... src/app.i"
+	@echo "... src/app.s"
 .PHONY : help
 
 
